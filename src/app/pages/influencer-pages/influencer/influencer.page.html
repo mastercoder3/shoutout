@@ -17,10 +17,13 @@
               <div class="col1a col-lg-7 col-md-7 col-sm-7 col-xs-12">
                   <div class="row row-1a1">
                     <div class="col1a1 col-lg-6 col-md-6 col-sm-6 col-xs-6" >
-                        <div class="ellipse"></div> 
+                        <div class="ellipse" *ngIf="!userData?.imageURL">
+                          
+                        </div> 
+                        <img *ngIf="userData?.imageURL" src="{{userData?.imageURL}}" class="ellipse" >
                     </div>
                     <div class="col1a2 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                        <h1>UTILISATEUR</h1>
+                        <h1>{{userData?.fname}} {{userData?.lname}}</h1>
                         <p id="activate">Activité</p>
                         <p id="price">10.000</p>
                     </div>  
@@ -45,9 +48,9 @@
                 </div>
                 <div class="loc">    
                   <div class="row row-b2">
-                      <ion-icon name="md-pin"></ion-icon><p>Ville, Pays</p>
+                      <ion-icon name="md-pin"></ion-icon><p>{{userData?.residence}}</p>
                   </div>
-                  <p id="desc">Description</p>
+                  <p id="desc">{{instaInfo?.data?.bio}}</p>
                 </div>
             </div>
           </div>
@@ -123,11 +126,9 @@
         </div>    
         <div class="row row-body">
           <div class="row row-a">
-            <div class="img"></div>
-            <div class="img"></div>
-            <div class="img"></div>
+            <img src="{{item}}" *ngFor="let item of instaPostThumbs" alt="" class="img">
           </div>
-          <div class="row row-b">
+          <!-- <div class="row row-b">
               <div class="img"></div>
               <div class="img"></div>
               <div class="img"></div>
@@ -136,11 +137,11 @@
               <div class="img"></div>
               <div class="img"></div>
               <div class="img"></div>
-          </div> 
+          </div>  -->
         </div>
         <div class="row row-foot">
           <div class="insta-tag">
-            <p>@Identifiant Instagram</p>
+            <p>@{{instaInfo?.data?.username}} Instagram</p>
           </div>  
         </div>
       </div>

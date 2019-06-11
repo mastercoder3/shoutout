@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { LoadingController } from '@ionic/angular';
 import { BehaviorSubject } from 'rxjs';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +13,8 @@ export class HelperService {
   token: BehaviorSubject<string>;
 
   constructor(
-    private loadingController: LoadingController
+    private loadingController: LoadingController,
+    private http: HttpClient
   ) {
     if(localStorage.getItem('access_token')){
       this.token = new BehaviorSubject<string>(localStorage.getItem('access_token'));
@@ -40,5 +43,24 @@ export class HelperService {
   closeLoading() {
     this.loading.dismiss();
   }
+
+  getUserInfo(id){
+    let url = 'https://api.instagram.com/v1/users/self/?access_token='+id;
+    // const headers = new HttpHeaders()
+    // .set('content-type', 'application/json')
+    // .set("Accept","application/json")
+
+    return this.http
+    .get(url);
+  }
+
+  getUserMedia(id){
+    let url = 'https://api.instagram.com/v1/users/self/media/recent/?access_token='+id;
+
+    return this.http
+    .get(url);
+  }
+
+
 
 }

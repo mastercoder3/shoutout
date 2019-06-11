@@ -27,22 +27,14 @@ export class InfluencerConnectPage implements OnInit {
     if(this.href.indexOf('access_token') > -1){
       console.log('coming');
       // localStorage.setItem('access_token',this.href.substring(this.href.indexOf("=")+1,this.href.length) );
-      // this.helper.setToken(this.href.substring(this.href.indexOf("=")+1,this.href.length));
-      window.opener.ProcessParentMessage(this.href.substring(this.href.indexOf("=")+1,this.href.length));
-      window.close();
+      this.helper.setToken(this.href.substring(this.href.indexOf("=")+1,this.href.length));
+      this.router.navigate(['dashboard/influencer'])
     }
   }
 
   instagram(){
-    window.open('https://api.instagram.com/oauth/authorize/?client_id=7b35de47d2ed4425a8165500fd89fea2&redirect_uri=http://localhost:8100/influencer-connect/&response_type=token','_blank','toolbar=0,status=0,width=626,height=436');
-    window.opener.ProcessParentMessage = (message) =>{
-    localStorage.setItem('access_token',message );
-    this.helper.setToken(message);
-    }
+    window.location.href = 'https://api.instagram.com/oauth/authorize/?client_id=7b35de47d2ed4425a8165500fd89fea2&redirect_uri=http://localhost:8100/influencer-connect/&response_type=token';
+
   }
 
-  ProcessParentMessage(message) {
-    localStorage.setItem('access_token',message );
-    this.helper.setToken(message);
-  }
 }
