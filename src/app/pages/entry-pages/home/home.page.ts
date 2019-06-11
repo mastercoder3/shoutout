@@ -15,9 +15,13 @@ connect(){
   this.router.navigate(['influencer-connect']);
 }
 
+  signupInfluencer(){
+    this.router.navigate(['influencer-signup']);
+  }
+
 
 generate(){
-  this.router.navigate(['generateur-contract']);
+  this.router.navigate(['signup-company']);
 }
 
 } 

@@ -9,14 +9,21 @@ export class ApiService {
   constructor(private afs: AngularFirestore) { }
 
   createUser(id,data){
-    return this.afs.doc('users/'+id).set(data);
+    return this.afs.doc('users/' + id).set(data);
   }
 
   getUser(id){
-    return this.afs.doc('users/'+id).valueChanges();
+    return this.afs.doc('users/' + id).valueChanges();
   }
 
   updateUser(id,data){
-    return this.afs.doc('users/'+id).update(data);
+    return this.afs.doc('users/' + id).update(data);
   }
+
+  // Influencer
+
+  createInfluencer(id,data) {
+    return this.afs.doc('influencer/' + id).set(data);
+  }
+
 }

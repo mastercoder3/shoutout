@@ -1,74 +1,81 @@
-
 <ion-content>
-<div class="container">
-  <div class="row screen">
-    <!-- <form [formGroup]="form"> -->
-    <div class="col-lg-6">
+  <div class="container">
+    <div class="row screen">
+      <!-- <form [formGroup]="form"> -->
+      <div class="col-lg-6">
         <form [formGroup]="form">
-      <div class="row profil">
-        <img class="profile" src="{{image || base64Image}}" id="prodileImage" style="height: 100px; width: 100px; border-radius:100%;">
-        <p>Ajouter une photo </p>
-        <input type="file" (change)="upload($event)" accept=".png,.jpg">
-      </div>
-      <br>
-      <div class="row row2">
-          <div class="col-lg-6 ">
+          <div class="row profil">
+            <img class="profile" src="{{image || base64Image}}" id="prodileImage"
+              style="height: 100px; width: 100px; border-radius:100%;" (click)="choosePicture()">
+            <p>Ajouter une photo </p>
+            <input type="file" (change)="upload($event)" accept=".png,.jpg" style="visibility: hidden;">
+          </div>
+          <br>
+          <div class="row row2">
+            <div class="col-lg-6 ">
               <p class="para">Nom</p>
               <ion-input class="input" type="text" formControlName="nom"></ion-input>
-          </div>
-          <div class="col-lg-6">
+            </div>
+            <div class="col-lg-6">
               <p class="para">Prénom</p>
               <ion-input class="input" type="text" formControlName="prenom"></ion-input>
             </div>
-            
-        </div>
-        <div class="row row2">
-            <div class="col-lg-6">
-                <p class="para">Date de Naissance</p>
-                <ion-input class="input" type="text" formControlName="dob"></ion-input>
-            </div>
-            <div class="col-lg-6">
-                <p class="para">Téléphone</p>
-                <ion-input class="input" type="text" formControlName="phone"></ion-input>
-              </div>
-             
+
           </div>
           <div class="row row2">
-              <div class="col-lg-6">
-                  <p class="para">Lieu de Résidence</p>
-                  <ion-input class="input" type="text" formControlName="residence"></ion-input>
-              </div>
-                
+            <div class="col-lg-6">
+              <p class="para">Date de Naissance</p>
+              <ion-input class="input" type="text" formControlName="dob"></ion-input>
+            </div>
+            <div class="col-lg-6">
+              <p class="para">Téléphone</p>
+              <ion-input class="input" type="text" formControlName="phone"></ion-input>
             </div>
 
-            <p class="select-p">Secteur D’activité</p>
-            <ion-item class="item">
-                <ion-select class="gender">
-                  <ion-select-option value="f">Female</ion-select-option>
-                  <ion-select-option value="m">Male</ion-select-option>
-                </ion-select>
-              </ion-item>
-              <p class="select-p1">Type de Partenariat</p>
-            <ion-item class="item1">
-                <ion-select class="gender">
-                  <ion-select-option value="f">Female</ion-select-option>
-                  <ion-select-option value="m">Male</ion-select-option>
-                </ion-select>
-              </ion-item>
+          </div>
+          <div class="row row2">
+            <div class="col-lg-6">
+              <p class="para">Lieu de Résidence</p>
+              <ion-input class="input" type="text" formControlName="residence"></ion-input>
+            </div>
+
+          </div>
+
+          <p class="select-p">Secteur D’activité</p>
+          <ion-item class="item">
+            <ion-select class="gender" formControlName="category">
+              <ion-select-option value="Sport & Fitness">Sport & Fitness</ion-select-option>
+              <ion-select-option value="Travel">Travel</ion-select-option>
+              <ion-select-option value="Parenting">Parenting</ion-select-option>
+              <ion-select-option value="Beauty">Beauty</ion-select-option>
+              <ion-select-option value="Food & Drink">Food & Drink</ion-select-option>
+              <ion-select-option value="Fashion & Style">Fashion & Style</ion-select-option>
+              <ion-select-option value="Photography">Photography</ion-select-option>
+              <ion-select-option value="Lifestyle">Lifestyle</ion-select-option>
+              <ion-select-option value="Home & Garden">Home & Garden</ion-select-option>
+              <ion-select-option value="Health">Health</ion-select-option>
+            </ion-select>
+          </ion-item>
+          <p class="select-p1">Type de Partenariat</p>
+          <ion-item class="item1">
+            <ion-select class="gender">
+
+            </ion-select>
+          </ion-item>
         </form>
-    </div>
-    <div class="col-lg-6" style="margin-top:16px;">
-        <form [formGroup]="form">
-      <br><br><br><br><br>
-        <p class="para2">Email</p>
-        <ion-input class="input2" type="email" formControlName="email"></ion-input>
-        <p class="para2">Mot de passe</p>
-        <ion-input class="input2" type="text" formControlName="password"></ion-input>
-        <br><br>
-        <ion-button class="btn" (click)="submit(form)">Envoyer</ion-button>
-      </form>
       </div>
-  
+      <div class="col-lg-6" style="margin-top:16px;">
+        <form [formGroup]="form">
+          <br><br><br><br><br>
+          <p class="para2">Email</p>
+          <ion-input class="input2" type="email" formControlName="email"></ion-input>
+          <p class="para2">Mot de passe</p>
+          <ion-input class="input2" type="password" formControlName="password"></ion-input>
+          <br><br>
+          <ion-button class="btn" (click)="submit(form)" [disabled]="form.pristine || form.invalid">Envoyer</ion-button>
+        </form>
+      </div>
+
+    </div>
   </div>
-</div>
 </ion-content>

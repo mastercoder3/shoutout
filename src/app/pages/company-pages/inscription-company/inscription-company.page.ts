@@ -3,6 +3,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AngularFireStorageReference, AngularFireUploadTask, AngularFireStorage } from '@angular/fire/storage';
 import { AuthenticationService } from 'src/app/services/authentication.service';
 import { ApiService } from 'src/app/services/api.service';
+import { HelperService } from 'src/app/services/helper.service';
 
 @Component({
   selector: 'app-inscription-company',
@@ -11,40 +12,63 @@ import { ApiService } from 'src/app/services/api.service';
 })
 export class InscriptionCompanyPage implements OnInit {
   form: FormGroup;
-  image='assets/imgs/profile.png';
-  sourcex;
-  ref: AngularFireStorageReference;
-  task: AngularFireUploadTask;
-  uploadImageId;
+  image = 'assets/imgs/profile.png';
   data;
-  blob: Blob;
 
-  constructor(private authService: AuthenticationService, private api: ApiService, private fb: FormBuilder, private fireStorage: AngularFireStorage ) { }
+  constructor(
+    private authService: AuthenticationService,
+    private api: ApiService,
+    private fb: FormBuilder,
+    private helper: HelperService
+  ) { }
 
   ngOnInit() {
     this.form = this.fb.group({
-      email: ['',Validators.email],
-      password: ['',Validators.required],
-      nom: ['',Validators.required],
+      email: ['', Validators.compose([Validators.required, Validators.email])],
+      password: ['', Validators.compose([Validators.required, Validators.minLength(6)])],
+      nom: ['', Validators.required],
       prenom: ['', Validators.required],
-      dob: ['', Validators.required],
-      phone: ['',Validators.required],
-      residence: ['', Validators.required]
-  })
-}
-submit(form){
-  this.authService.signup(form.value.email, form.value.password)
-  .then(res =>{
-    this.api.createUser(res.user.uid, {email: form.value.email, password: form.value.password, nom: form.value.nom, prenom: form.value.prenom, phone: form.value.phone, type: 'company'  })
-    .then(ress=>{
-      localStorage.setItem('uid',res.user.uid);
-      
-    },err =>{
-
+      companynom: ['', Validators.required],
+      phone: ['', Validators.required],
+      category: ['', Validators.required],
+      pays: ['', Validators.required],
+      numsiret: ['', Validators.compose([Validators.required, Validators.minLength(14)])]
     })
-},err=>{
+  }
+  submit(form) {
+    this.data = {
+      email: form.value.email,
+      password: form.value.password,
+      fname: form.value.nom,
+      lname: form.value.prenom,
+      companyName: form.value.companynom,
+      phone: form.value.phone,
+      category: form.value.category,
+      pays: form.value.pays,
+      companyNumber: form.value.numsiret
+    };
 
-});
-}
+    this.helper.presentLoading();
+    this.authService.signup(this.data.email, this.data.password)
+      .then(res => {
+        this.api.createUser(res.user.uid,
+          {
+            email: this.data.email,
+            password: this.data.password,
+            type: 'company'
+          })
+          .then((created) => {
+            this.api.createInfluencer(res.user.uid, this.data)
+              .then(after => {
+                this.helper.closeLoading();
+                localStorage.setItem('uid', res.user.uid);
+              });
+          }, err => {
+            this.helper.closeLoading();
+          });
+      }, err => {
+        this.helper.closeLoading();
+      });
+  }
 
 }
