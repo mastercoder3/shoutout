@@ -1,0 +1,53 @@
+
+ion-content{
+    --background: url('../../../../assets/imgs/background2.png') 0 0/100% 100% no-repeat;
+    width:100% !important;
+    background-size: cover !important;
+   background-attachment: fixed !important;
+}
+
+.container{
+    height: 100%;
+    min-width: 100%;
+    padding: 0%;
+}
+.container .screen{
+    height: 100%;
+    min-width: 100%;
+    padding: 0%
+}
+.container h1{
+    color: white;
+    margin-top: 250px;
+    margin-left: 60%;
+    font-size: 1.2em;
+}
+.btn{
+    display: block;
+    margin-left:auto;
+    
+    width: 160px;
+    height: 50px;
+    color: white;
+    --background:#99FF99;
+    font-size: 0.8em !important;
+}
+.btn1{
+    
+    margin-right: 19.5%;
+    margin-top: 10px;
+    color: black;
+    --background:white;
+    font-size: 0.8em !important;
+}
+.btn2{
+     display: block;
+    margin-left:auto;
+    margin-right: 20px;
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+    color: black;
+    --background:white;
+    font-size: 0.8em !important;
+}

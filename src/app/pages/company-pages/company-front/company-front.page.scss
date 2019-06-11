@@ -1,0 +1,187 @@
+.container{
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+}
+.container ion-grid{
+    height:100%
+}
+.container ion-row{
+    height:100%
+}
+.container ion-col{
+    height:100%
+}
+
+.main-div{
+    height: 280px;
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px 0 rgba(66, 66, 66, 0.06), 0 6px 20px 0 rgba(87, 86, 86, 0.06);
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+// .main-div{
+//     height: 50%;
+//     width: 80%;
+//     margin-left: auto;
+//     margin-right: auto;
+//     background-color: #ffffff;
+//     z-index: 2;
+//     box-shadow: 0 4px 8px 0 rgba(66, 66, 66, 0.03), 0 6px 20px 0 rgba(87, 86, 86, 0.03);
+//     border-radius: 5px;
+// }
+.main-div ion-row{
+    height: 60%;
+    width: 100%;
+}
+.main-div .left-inner-circle{
+    height: 100px;
+    width: 100px;
+    background-color: #767676;
+    border-radius: 100%;
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}   
+.main-div .col1{
+    margin-left: -5%;
+    margin-top: 5%;
+    h1{
+        font-size: 0.8rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    #activate{
+        margin-top: 0%;
+        font-size: 0.6rem;
+        margin-bottom: 2px;
+    }
+    #price{
+        margin-top: 2px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: #30A9E6;
+    }
+    #liens{
+        font-size:0.6rem;
+        color: #BD973B;
+        margin-top: -15px;
+    }
+}
+.main-div .col2{
+    margin-top: 10%;
+   
+    ion-icon{
+        color: #EBEBEB;
+        font-size: 1.5em;
+        position: relative;
+        top: 7px;
+    }
+    ion-button{
+        width: 65%;
+        height: 20%;
+        box-shadow: none;
+        --background: #5BED8A;
+        i{
+            position: fixed;
+            left: 8px;
+        }
+        p{
+            color: white;
+            font-size: 12px;
+            text-transform: capitalize;
+            margin-left: 16px;
+            position: relative;
+             top: 7px;
+        }
+        
+    }
+}
+.pin{
+    margin-top:15%;
+    margin-left: 10%;
+}
+.pin ion-icon{
+    position: relative;
+    top: 3px;
+}
+.para{
+    margin-left: 10%;
+}
+@media(min-width: 320px) and (max-width: 575px){
+    .main-div{
+        height: 420px;
+        width: 50%;
+        border-radius: 10px;
+        box-shadow: 0 6px 12px 0 rgba(66, 66, 66, 0.06), 0 6px 20px 0 rgba(87, 86, 86, 0.06);
+        margin-left:auto;
+        margin-right: auto;
+        margin-top: 5%;
+    }
+    .main-div .left-inner-circle{
+        height: 100px;
+        width: 100px;
+        background-color: #767676;
+        border-radius: 100%;
+        margin-top: 10%;
+        margin-left: 25%;
+        
+    }   
+    .main-div .col1{
+        margin-left: 25%;
+        margin-top: 5%;
+        h1{
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        #activate{
+            margin-top: 0%;
+            font-size: 0.6rem;
+            margin-bottom: 2px;
+        }
+        #price{
+            margin-top: 2px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: #30A9E6;
+        }
+        #liens{
+            font-size:0.6rem;
+            color: #BD973B;
+            margin-top: -10px;
+        }
+    }
+    .main-div .col2{
+        margin-top: 10%;
+        margin-left: 10%;
+        ion-icon{
+            color: #EBEBEB;
+            font-size: 1.5em;
+            position: relative;
+            top: 7px;
+        }
+        ion-button{
+            width: 65%;
+            height: 20%;
+            box-shadow: none;
+            --background: #5BED8A;
+            i{
+                position: fixed;
+                left: 8px;
+            }
+            p{
+                color: white;
+                font-size: 12px;
+                text-transform: capitalize;
+                margin-left: 16px;
+                position: relative;
+                 top: 7px;
+            }
+            
+        }
+    }
+}

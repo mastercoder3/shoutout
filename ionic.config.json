@@ -1,0 +1,7 @@
+{
+  "name": "SmartOut",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

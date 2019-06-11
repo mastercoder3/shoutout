@@ -1,0 +1,23 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+    <div class="container">
+        <div class="row screen">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+             <br><br>
+                <p class="para">Email</p>
+                <ion-input class="input2" type="email" [(ngModel)]="userData.email"></ion-input>
+                <p class="para">Mot de passe</p>
+                <ion-input class="input2" type="password" [(ngModel)]="userData.password"></ion-input>
+                <br>
+                <ion-button class="btn" (click)="Login()">Envoyer</ion-button>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+        </div>
+      </div>
+</ion-content>

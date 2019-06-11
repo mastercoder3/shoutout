@@ -1,0 +1,554 @@
+.container{
+    height: 100%;
+    min-width:100%;
+    padding: 0%;
+}
+.container .screen{
+    height: 100%;
+    min-width: 100%;
+    padding: 0%
+}
+
+.col1 h1{
+    font-size: 1.3em;
+    margin-left: 5%;
+}
+.col1 p{
+    font-size: 0.9em;
+    margin-left: 10%;
+}
+.para{
+    left: 25px;
+    position: relative;
+    top: 30px;
+    font-size: 0.8em !important;
+}
+.input{
+    border: rgb(245, 237, 237) 1px solid;
+    width: 80%;
+    margin-left: 50px;
+    border-radius: 5px;
+    position: relative;
+    top: 20px;
+}
+.para1{
+    right: 10px;
+    position: relative;
+    top: 30px;
+    font-size: 0.8em !important;
+}
+.input1{
+    border: rgb(245, 237, 237) 1px solid;
+    width: 80%;
+    margin-left: 10px;
+    border-radius: 5px;
+    position: relative;
+    top: 20px;
+}
+.select-p{
+    position: relative;
+    top:40px;
+    right: 10px;
+}
+.item{
+    width: 80% !important;
+    border: rgb(245, 237, 237) 1px solid;
+    margin-left: 50px;
+    border-radius: 5px;
+    --border-width: 0 0 1px 0 !important;
+    position: relative;
+    top: 30px;
+}
+.para-textarea{
+    right: 10px;
+    position: relative;
+    top: 50px;
+    font-size: 0.8em !important;
+}
+.textarea{
+    border: rgb(245, 237, 237) 1px solid;
+    width: 80%;
+    height: 120px;
+    margin-left: 50px;
+    border-radius: 5px;
+    position: relative;
+    top: 40px;
+}
+.row2 {
+    .para{
+        left: 25px;
+        position: relative;
+        top: 60px;
+        font-size: 0.8em !important;
+    }
+    .input{
+        border: rgb(245, 237, 237) 1px solid;
+        width: 80%;
+        margin-left: 50px;
+        border-radius: 5px;
+        position: relative;
+        top: 50px;
+    }
+    .para1{
+        right: 10px;
+        position: relative;
+        top: 60px;
+        font-size: 0.8em !important;
+    }
+    .input1{
+        border: rgb(245, 237, 237) 1px solid;
+        width: 80%;
+        margin-left: 10px;
+        border-radius: 5px;
+        position: relative;
+        top: 50px;
+    }
+}
+.checkbox{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.checkbox-para{
+    font-size: 0.9em;
+    position: relative;
+    top: 29px;
+    left: 5px;
+}
+.para-input{
+  font-size: 0.8em;
+  margin-top: 20px;
+  margin-left: 20px;
+   
+}
+.col2 ion-input{
+    border: rgb(245, 237, 237) 1px solid;
+    width: 80%;
+    margin-left: 20px;
+    border-radius: 5px;
+    margin-top: -10px;
+    
+}
+.para3{
+    left: 25px;
+    position: relative;
+    top: 30px;
+    font-size: 0.8em !important;
+}
+.input2{
+    border: rgb(245, 237, 237) 1px solid;
+    width: 80%;
+    margin-left: 50px;
+    border-radius: 5px;
+    position: relative;
+    top: 30px;
+}
+.para4{
+    right: 10px;
+    position: relative;
+    top: 30px;
+    font-size: 0.8em !important;
+}
+.input3{
+    border: rgb(245, 237, 237) 1px solid;
+    width: 80%;
+    margin-left: -15px !important;
+    border-radius: 5px;
+    position: relative;
+    top: 30px;
+}
+.para5{
+    right: 10px;
+    position: relative;
+    top: 40px;
+    font-size: 0.8em !important;
+}
+.input4{
+    border: rgb(245, 237, 237) 1px solid;
+    width: 80%;
+    margin-left: -15px !important;
+    border-radius: 5px;
+    position: relative;
+    top: 43px;
+}
+.item1{
+    width: 80% !important;
+    border: rgb(245, 237, 237) 1px solid;
+    margin-left: 20px;
+    border-radius: 5px;
+    --border-width: 0 0 1px 0 !important;
+    position: relative;
+    top: 30px;
+}
+.para6{
+    left: 25px;
+    position: relative;
+    top: 40px;
+    font-size: 0.8em !important;
+}
+.btn{
+    margin-top: 100px;
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+    width: 180px;
+    height: 50px;
+    font-size: 0.7em !important;
+    color: white;
+    --background:#30A9E6;
+}
+.a{
+    text-align: center;
+    font-size: 0.8em;
+}
+
+@media(min-width: 576px) and (max-width: 992px){
+    .para1{
+        left: 25px;
+        position: relative;
+        top: 30px;
+        font-size: 0.8em !important;
+    }
+    .input1{
+        border: rgb(245, 237, 237) 1px solid;
+        width: 80%;
+        margin-left: 50px;
+        border-radius: 5px;
+        position: relative;
+        top: 20px;
+    }
+    .select-p{
+        position: relative;
+        top:40px;
+        left: 25px;
+    }
+    .item{
+        width: 80% !important;
+        border: rgb(245, 237, 237) 1px solid;
+        margin-left: 50px;
+        border-radius: 5px;
+        --border-width: 0 0 1px 0 !important;
+        position: relative;
+        top: 30px;
+    }
+    .para-textarea{
+        left: 25px;
+        position: relative;
+        top: 50px;
+        font-size: 0.8em !important;
+    }
+    .textarea{
+        border: rgb(245, 237, 237) 1px solid;
+        width: 80%;
+        height: 120px;
+        margin-left: 50px;
+        border-radius: 5px;
+        position: relative;
+        top: 40px;
+    }
+    .row2 {
+        .para{
+            left: 25px;
+            position: relative;
+            top: 60px;
+            font-size: 0.8em !important;
+        }
+        .input{
+            border: rgb(245, 237, 237) 1px solid;
+            width: 80%;
+            margin-left: 50px;
+            border-radius: 5px;
+            position: relative;
+            top: 50px;
+        }
+        .para1{
+            right: 10px;
+            position: relative;
+            top: 60px;
+            font-size: 0.8em !important;
+        }
+        .input1{
+            border: rgb(245, 237, 237) 1px solid;
+            width: 80%;
+            margin-left: 50px;
+            border-radius: 5px;
+            position: relative;
+            top: 50px;
+        }
+        .awin{
+            height: 100px;
+            width: 100%;
+        }
+    }
+    .checkbox{
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    .checkbox-para{
+        font-size: 0.9em;
+        position: relative;
+        top: 29px;
+        left: 5px;
+    }
+    .para-input{
+      font-size: 0.8em;
+      margin-top: 20px;
+      margin-left: 20px;
+       
+    }
+    .col2 ion-input{
+        border: rgb(245, 237, 237) 1px solid;
+        width: 80%;
+        margin-left: 20px;
+        border-radius: 5px;
+        margin-top: -10px;
+        
+    }
+    .para3{
+        left: 25px;
+        position: relative;
+        top: 30px;
+        font-size: 0.8em !important;
+    }
+    .input2{
+        border: rgb(245, 237, 237) 1px solid;
+        width: 80%;
+        margin-left: 50px;
+        border-radius: 5px;
+        position: relative;
+        top: 30px;
+    }
+    .para4{
+        left: 25px;
+        position: relative;
+        top: 35px;
+        font-size: 0.8em !important;
+    }
+    .input3{
+        border: rgb(245, 237, 237) 1px solid;
+        width: 80%;
+        margin-left: 20px !important;
+        border-radius: 5px;
+        position: relative;
+        top: 30px;
+    }
+    .para5{
+        left: 25px;
+        position: relative;
+        top: 40px;
+        font-size: 0.8em !important;
+    }
+    .input4{
+        border: rgb(245, 237, 237) 1px solid;
+        width: 80%;
+        margin-left: 20px !important;
+        border-radius: 5px;
+        position: relative;
+        top: 43px;
+    }
+    .item1{
+        width: 80% !important;
+        border: rgb(245, 237, 237) 1px solid;
+        margin-left: 20px;
+        border-radius: 5px;
+        --border-width: 0 0 1px 0 !important;
+        position: relative;
+        top: 30px;
+    }
+    .para6{
+        left: 25px;
+        position: relative;
+        top: 40px;
+        font-size: 0.8em !important;
+    }
+    .btn{
+        margin-top: 100px;
+        display:block;
+        margin-left:auto;
+        margin-right: auto;
+        width: 180px;
+        height: 50px;
+        font-size: 0.7em !important;
+        color: white;
+        --background:#30A9E6;
+    }
+    .a{
+        text-align: center;
+        font-size: 0.8em;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 575px){
+    .para1{
+        left: 25px;
+        position: relative;
+        top: 30px;
+        font-size: 0.8em !important;
+    }
+    .input1{
+        border: rgb(245, 237, 237) 1px solid;
+        width: 80%;
+        margin-left: 50px;
+        border-radius: 5px;
+        position: relative;
+        top: 20px;
+    }
+    .select-p{
+        position: relative;
+        top:40px;
+        left: 25px;
+    }
+    .item{
+        width: 80% !important;
+        border: rgb(245, 237, 237) 1px solid;
+        margin-left: 50px;
+        border-radius: 5px;
+        --border-width: 0 0 1px 0 !important;
+        position: relative;
+        top: 30px;
+    }
+    .para-textarea{
+        left: 25px;
+        position: relative;
+        top: 50px;
+        font-size: 0.8em !important;
+    }
+    .textarea{
+        border: rgb(245, 237, 237) 1px solid;
+        width: 80%;
+        height: 120px;
+        margin-left: 50px;
+        border-radius: 5px;
+        position: relative;
+        top: 40px;
+    }
+    .row2 {
+        .para{
+            left: 25px;
+            position: relative;
+            top: 60px;
+            font-size: 0.8em !important;
+        }
+        .input{
+            border: rgb(245, 237, 237) 1px solid;
+            width: 80%;
+            margin-left: 50px;
+            border-radius: 5px;
+            position: relative;
+            top: 50px;
+        }
+        .para1{
+            right: 10px;
+            position: relative;
+            top: 60px;
+            font-size: 0.8em !important;
+        }
+        .input1{
+            border: rgb(245, 237, 237) 1px solid;
+            width: 80%;
+            margin-left: 50px;
+            border-radius: 5px;
+            position: relative;
+            top: 50px;
+        }
+        .awin{
+            height: 100px;
+            width: 100%;
+        }
+    }
+    .checkbox{
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    .checkbox-para{
+        font-size: 0.9em;
+        position: relative;
+        top: 29px;
+        left: 5px;
+    }
+    .para-input{
+      font-size: 0.8em;
+      margin-top: 20px;
+      margin-left: 20px;
+       
+    }
+    .col2 ion-input{
+        border: rgb(245, 237, 237) 1px solid;
+        width: 80%;
+        margin-left: 20px;
+        border-radius: 5px;
+        margin-top: -10px;
+        
+    }
+    .para3{
+        left: 25px;
+        position: relative;
+        top: 30px;
+        font-size: 0.8em !important;
+    }
+    .input2{
+        border: rgb(245, 237, 237) 1px solid;
+        width: 80%;
+        margin-left: 50px;
+        border-radius: 5px;
+        position: relative;
+        top: 30px;
+    }
+    .para4{
+        left: 25px;
+        position: relative;
+        top: 35px;
+        font-size: 0.8em !important;
+    }
+    .input3{
+        border: rgb(245, 237, 237) 1px solid;
+        width: 80%;
+        margin-left: 20px !important;
+        border-radius: 5px;
+        position: relative;
+        top: 30px;
+    }
+    .para5{
+        left: 25px;
+        position: relative;
+        top: 40px;
+        font-size: 0.8em !important;
+    }
+    .input4{
+        border: rgb(245, 237, 237) 1px solid;
+        width: 80%;
+        margin-left: 20px !important;
+        border-radius: 5px;
+        position: relative;
+        top: 43px;
+    }
+    .item1{
+        width: 80% !important;
+        border: rgb(245, 237, 237) 1px solid;
+        margin-left: 20px;
+        border-radius: 5px;
+        --border-width: 0 0 1px 0 !important;
+        position: relative;
+        top: 30px;
+    }
+    .para6{
+        left: 25px;
+        position: relative;
+        top: 40px;
+        font-size: 0.8em !important;
+    }
+    .btn{
+        margin-top: 100px;
+        display:block;
+        margin-left:auto;
+        margin-right: auto;
+        width: 170px;
+        height: 50px;
+        font-size: 0.7em !important;
+        color: white;
+        --background:#30A9E6;
+    }
+    .a{
+        text-align: center;
+        font-size: 0.8em;
+    }
+}

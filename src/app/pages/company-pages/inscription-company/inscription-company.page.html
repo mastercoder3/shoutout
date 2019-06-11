@@ -1,0 +1,46 @@
+
+<ion-content>
+<div class="container">
+  <div class="row screen">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+       <br><br>
+       <form [formGroup]="form">
+        <div class="row row2">
+            <div class="col-lg-6">
+                <p class="para">Nom</p>
+                <ion-input class="input" type="text" formControlName="nom"></ion-input>
+            </div>
+            <div class="col-lg-6">
+                <p class="para">Prénom</p>
+                <ion-input class="input" type="text" formControlName="prenom"></ion-input>
+              </div>
+              <div class="awin"></div>
+          </div>
+          <p class="para">Nom de la Compagnie</p>
+          <ion-input class="input1" type="text" formControlName="companynom"></ion-input>
+          <div class="row row2">
+              <div class="col-lg-6">
+                  <p class="para">Pays</p>
+                  <ion-input class="input" type="text" formControlName="pays"></ion-input>
+              </div>
+              <div class="col-lg-6">
+                  <p class="para">Téléphone</p>
+                  <ion-input class="input" type="number" formControlName="phone"></ion-input>
+                </div>
+                <div class="awin"></div>
+            </div>
+            <p class="para">Numero Siret</p>
+          <ion-input class="input2" type="text" formControlName="numsiret"></ion-input>
+          <p class="para">Email</p>
+          <ion-input class="input2" type="email" formControlName="email"></ion-input>
+          <p class="para">Mot de passe</p>
+          <ion-input class="input2" type="text" formControlName="password"></ion-input>
+          <br>
+          <ion-button class="btn" (click)="submit(form)">Envoyer</ion-button>
+    </form>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+  </div>
+</div>
+</ion-content>

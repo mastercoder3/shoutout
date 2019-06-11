@@ -1,0 +1,83 @@
+ion-content{
+    --background: url('../../../assets/imgs/background.png') 0 0/100% 100% no-repeat;
+    width:100% !important;
+    background-size: cover !important;
+   background-attachment: fixed !important;
+}
+.info-div{
+    height: 90%;
+    width: 60%;
+    background-color: white;
+    margin-left:20%;
+    margin-top: 70px;
+    border-radius: 7px;
+}
+.h1{
+    margin-left: 30px;
+    position: relative;
+    top: 20px;
+    font-size:1.5em;
+}
+.info-div p{
+    margin-left: 40px;
+    position: relative;
+    top: 20px;
+}
+.input{
+    border: rgb(245, 237, 237) 1px solid;
+    width: 80%;
+    margin-left: 30px;
+    border-radius: 5px;
+    position: relative;
+    top: 10px;
+}
+.item{
+    width: 80% !important;
+    border: rgb(245, 237, 237) 1px solid;
+    margin-left: 30px;
+    border-radius: 5px;
+    --border-width: 0 0 1px 0 !important;
+    position: relative;
+    top: 10px;
+}
+
+  .icon{
+      margin-left: auto;
+  }
+  .btn{
+      --background: #FF5B60;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;
+      margin-top: 30px;
+      color: white;
+  }
+ h2{
+     color:white;
+     font-size: 2.1vh;
+     margin-left: 30%;
+     margin-top: 20%;
+ }
+ h3{
+    color:white;
+    font-size: 2vh;
+    margin-left: 30%;
+    position: relative;
+    bottom: 10px;
+ }
+ .followers-div{
+     height: 5vh;
+     width: 20vh;
+     background-color:#FFCCE2;
+     border-radius: 5px;
+     margin-left: 30%;
+     position: relative;
+    bottom: 15px;
+ }
+ .followers-div p{
+     color:white;
+     text-align: center;
+     position: relative;
+     top: 5px;
+ }

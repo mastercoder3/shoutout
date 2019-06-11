@@ -1,0 +1,693 @@
+.container{
+    height: 100%;
+    min-width:100%;
+    padding: 0%;
+}
+.container .screen{
+    height: 100%;
+    min-width: 100%;
+    padding: 0%
+}
+.col1{
+    
+    background-color: white;
+}
+.col2{
+    
+    background-color: #F4F4F4
+}
+.col-inner-1 h1{
+    font-size: 1.3em;
+    margin-left: 10%;
+   }
+
+   .info-div{
+    height: 85%;
+    width: 90%;
+    background-color: white;
+    margin-left:3%;
+    margin-top: 30px;
+    border-radius: 7px;
+}
+.h1{
+    margin-left: 30px;
+    position: relative;
+    top: 20px;
+}
+.info-div p{
+    margin-left: 40px;
+    position: relative;
+    top: 20px;
+}
+.input{
+    border: rgb(245, 237, 237) 1px solid;
+    width: 80%;
+    margin-left: 30px;
+    border-radius: 5px;
+    position: relative;
+    top: 10px;
+}
+.item{
+    width: 80% !important;
+    border: rgb(245, 237, 237) 1px solid;
+    margin-left: 30px;
+    border-radius: 5px;
+    --border-width: 0 0 1px 0 !important;
+    position: relative;
+    top: 10px;
+}
+
+  .icon{
+      margin-left: auto;
+  }
+  .btn{
+      --background: #FF5B60;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      height: 50px;
+      margin-top: 40px;
+      color: white;
+      font-size: 0.8em;
+  }
+  .myCustomSelect{
+    max-width: 100% !important;
+  }
+  .Active-div{
+      height: 200px;
+      width: 90%;
+      border: rgb(235, 232, 232) 1px solid;
+      border-radius: 5px;
+      margin-left: -5%;
+  }
+  .rectangle{
+      height: 110px;
+      width: 27%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .Active-div h2{
+      font-size: 0.9em;
+      margin-left: 5%;
+      margin-top: 30px;
+  }
+  .Active-div p{
+      font-size: 0.8em;
+      margin-top: -10px;
+      margin-left: 5%;
+  }
+  .Active-div{
+  
+    ion-button{
+        
+        height: 30px;
+        width: 150%;
+        box-shadow: none;
+        --background: #5BED8A;
+        margin-right:60px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:29px
+    }
+    ion-button p{
+        position: relative;
+        top: 13px
+    }
+  }
+  .heart{
+      margin-left: -15px;
+      height: 20px;
+      width: 20px;
+      margin-top:34px
+  }
+  .k-div{
+    height:30px;
+    width: 80%;
+    background-color: #EBEBEB;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    margin-top:30px
+  }
+  .k-div p{
+      position: relative;
+      top: 15px;
+      font-size: 0.7em;
+  }
+  
+  .col2 h1{
+      margin-left: 30px;
+      font-size: 1.2em;
+  }
+  .col2 p{
+    margin-left: 30px;
+    font-size: 1em;
+}
+.destination-div{
+    height: 130px;
+    width: 85%;
+    background-color: white;
+    border-radius: 5px;
+    margin-left:auto;
+    margin-right: auto;
+}
+.ellipse-black{
+    height: 50px;
+    width:50px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:10px;
+}
+.destination-div h2{
+    font-size: 0.9em;
+    margin-left: -10%;
+}
+.destination-div p{
+    font-size: 0.8em;
+    margin-left: -10%;
+    margin-top: -9px;
+    
+}
+.plane{
+    height: 30px;
+    width:30px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:10px;
+}
+.h2{
+    font-size: 0.9em;
+    margin-left: -10%;
+    margin-top: 10px;
+}
+.p{
+    font-size: 0.8em;
+    margin-left: -10%;
+    margin-top: -9px;
+     
+}
+
+@media(min-width: 768px) and (max-width: 992px){
+    .Active-div{
+        height: 200px;
+        width: 90%;
+        border: rgb(235, 232, 232) 1px solid;
+        border-radius: 5px;
+        margin-left: 10%;
+    }
+    .rectangle{
+        height: 110px;
+        width: 27%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .Active-div h2{
+        font-size: 0.9em;
+        margin-left: 5%;
+        margin-top: 30px;
+    }
+    .Active-div p{
+        font-size: 0.8em;
+        margin-top: -10px;
+        margin-left: 5%;
+    }
+    .Active-div{
+    
+      ion-button{
+          
+          height: 30px;
+          width: 30%;
+          box-shadow: none;
+          --background: #5BED8A;
+         
+          display: block;
+          margin-right: auto;
+          margin-left: 60%;
+          margin-top:-50px
+      }
+      ion-button p{
+          position: relative;
+          top: 13px
+      }
+    }
+    .heart{
+        display: block;
+        margin-right: auto;
+        margin-left: 37%;
+        height: 20px;
+        width: 20px;
+        margin-top:-50px
+    }
+    .k-div{
+      height:30px;
+      width: 17%;
+      background-color: #EBEBEB;
+     
+      position: relative;
+      left: 70%;
+      border-radius: 5px;
+      margin-top:-50px
+    }
+    .k-div p{
+        position: relative;
+        top: 15px;
+    }
+    
+    .col2 h1{
+        margin-left: 28px;
+        font-size: 1.2em;
+    }
+    .col2 p{
+      margin-left: 28px;
+      font-size: 1em;
+  }
+  .destination-div{
+      height: 130px;
+      width: 85%;
+      background-color: white;
+      border-radius: 5px;
+      margin-left:auto;
+      margin-right: auto;
+  }
+  .ellipse-black{
+      height: 50px;
+      width:50px;
+      display:block;
+      margin-left: 5%;
+      margin-right: auto;
+      margin-top:10px;
+  }
+  .destination-div h2{
+      font-size: 0.9em;
+      margin-left: 35%;
+      margin-top: -17%
+  }
+  .destination-div p{
+      font-size: 0.8em;
+      margin-left: 35%;
+      margin-top: -9px;
+      
+  }
+  .plane{
+      height: 30px;
+      width:30px;
+      display:block;
+      margin-left: 8%;
+      margin-right: auto;
+      margin-top:10px;
+  }
+  .h2{
+      font-size: 0.9em;
+      margin-left: -10%;
+      position: relative;
+      top:10px
+  }
+  .p{
+      font-size: 0.8em;
+      margin-left: -10%;
+      position: relative;
+      top:10px;
+       
+  }
+  
+}
+@media(min-width: 576px) and (max-width: 767px){
+    .Active-div{
+        height: 200px;
+        width: 90%;
+        border: rgb(235, 232, 232) 1px solid;
+        border-radius: 5px;
+        margin-left: 10%;
+    }
+    .rectangle{
+        height: 110px;
+        width: 27%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .Active-div h2{
+        font-size: 0.9em;
+        margin-left: 5%;
+        margin-top: 30px;
+    }
+    .Active-div p{
+        font-size: 0.8em;
+        margin-top: -10px;
+        margin-left: 5%;
+    }
+    .Active-div{
+    
+      ion-button{
+          
+          height: 30px;
+          width: 30%;
+          box-shadow: none;
+          --background: #5BED8A;
+         
+          display: block;
+          margin-right: auto;
+          margin-left: 60%;
+          margin-top:-50px
+      }
+      ion-button p{
+          position: relative;
+          top: 13px
+      }
+    }
+    .heart{
+        display: block;
+        margin-right: auto;
+        margin-left: 37%;
+        height: 20px;
+        width: 20px;
+        margin-top:-50px
+    }
+    .k-div{
+      height:30px;
+      width: 17%;
+      background-color: #EBEBEB;
+     
+      position: relative;
+      left: 70%;
+      border-radius: 5px;
+      margin-top:-50px
+    }
+    .k-div p{
+        position: relative;
+        top: 15px;
+    }
+    .col2{
+        margin-top:10px;
+    }
+    .col2 h1{
+        margin-left: 28px;
+        font-size: 1.2em;
+    }
+    .col2 p{
+      margin-left: 28px;
+      font-size: 1em;
+  }
+  .destination-div{
+      height: 130px;
+      width: 85%;
+      background-color: white;
+      border-radius: 5px;
+      margin-left:auto;
+      margin-right: auto;
+  }
+  .ellipse-black{
+      height: 50px;
+      width:50px;
+      display:block;
+      margin-left: 5%;
+      margin-right: auto;
+      margin-top:10px;
+  }
+  .destination-div h2{
+      font-size: 0.9em;
+      margin-left: 35%;
+      margin-top: -17%
+  }
+  .destination-div p{
+      font-size: 0.8em;
+      margin-left: 35%;
+      margin-top: -9px;
+      
+  }
+  .plane{
+      height: 30px;
+      width:30px;
+      display:block;
+      margin-left: 8%;
+      margin-right: auto;
+      margin-top:20px;
+  }
+  .h2{
+      font-size: 0.9em;
+      margin-left: -10%;
+      position: relative;
+      top:20px
+  }
+  .p{
+      font-size: 0.8em;
+      margin-left: -10%;
+      position: relative;
+      top:20px;
+       
+  }
+}
+
+@media(min-width: 370px) and (max-width: 575px){
+    .Active-div{
+        height: 200px;
+        width: 90%;
+        border: rgb(235, 232, 232) 1px solid;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .rectangle{
+        height: 110px;
+        width: 27%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .Active-div h2{
+        font-size: 0.9em;
+        margin-left: 5%;
+        margin-top: 30px;
+    }
+    .Active-div p{
+        font-size: 0.8em;
+        margin-top: -10px;
+        margin-left: 5%;
+    }
+    .Active-div{
+    
+      ion-button{
+          
+          height: 30px;
+          width: 25%;
+          box-shadow: none;
+          --background: #5BED8A;
+         position: relative;
+         left: 22%;
+          margin-top:-50px
+      }
+      ion-button p{
+          position: relative;
+          top: 13px
+      }
+    }
+    .heart{
+        display: block;
+        margin-right: auto;
+        margin-left: 37%;
+        height: 20px;
+        width: 20px;
+        margin-top:-50px
+    }
+    .k-div{
+      height:30px;
+      width: 17%;
+      background-color: #EBEBEB;
+     
+      position: relative;
+      left: 67%;
+      border-radius: 5px;
+      margin-top:-50px
+    }
+    .k-div p{
+        position: relative;
+        top: 15px;
+        font-size: 0.7em;
+    }
+    .col2{
+        margin-top:10px;
+    }
+    .col2 h1{
+        margin-left: 28px;
+        font-size: 1.2em;
+    }
+    .col2 p{
+      margin-left: 28px;
+      font-size: 1em;
+  }
+  .destination-div{
+      height: 130px;
+      width: 85%;
+      background-color: white;
+      border-radius: 5px;
+      margin-left:auto;
+      margin-right: auto;
+  }
+  .ellipse-black{
+      height: 50px;
+      width:50px;
+      display:block;
+      margin-left: 5%;
+      margin-right: auto;
+      margin-top:10px;
+  }
+  .destination-div h2{
+      font-size: 0.9em;
+      margin-left: 35%;
+      margin-top: -14%
+  }
+  .destination-div p{
+      font-size: 0.8em;
+      margin-left: 35%;
+      margin-top: -9px;
+      
+  }
+  .plane{
+      height: 30px;
+      width:30px;
+      display:block;
+      margin-left: 8%;
+      margin-right: auto;
+      margin-top:20px;
+  }
+  .h2{
+      font-size: 0.9em;
+      margin-left: -10%;
+      position: relative;
+      top:20px
+  }
+  .p{
+      font-size: 0.8em;
+      margin-left: -10%;
+      position: relative;
+      top:20px;
+       
+  }
+}
+@media(min-width: 320px) and (max-width: 369px){
+    .Active-div{
+        height: 200px;
+        width: 90%;
+        border: rgb(235, 232, 232) 1px solid;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .rectangle{
+        height: 110px;
+        width: 27%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .Active-div h2{
+        font-size: 0.9em;
+        margin-left: 5%;
+        margin-top: 30px;
+    }
+    .Active-div p{
+        font-size: 0.8em;
+        margin-top: -10px;
+        margin-left: 5%;
+    }
+    .Active-div{
+    
+      ion-button{
+          
+          height: 30px;
+          width: 27%;
+          box-shadow: none;
+          --background: #5BED8A;
+         position: relative;
+         left: 30%;
+          margin-top:-50px
+      }
+      ion-button p{
+          position: relative;
+          top: 13px
+      }
+    }
+    .heart{
+        display: block;
+        margin-right: auto;
+        margin-left: 40%;
+        height: 20px;
+        width: 20px;
+        margin-top:-50px
+    }
+    .k-div{
+      height:30px;
+      width: 17%;
+      background-color: #EBEBEB;
+     
+      position: relative;
+      left: 67%;
+      border-radius: 5px;
+      margin-top:-50px
+    }
+    .k-div p{
+        position: relative;
+        top: 15px;
+        font-size: 0.7em;
+    }
+    .col2{
+        margin-top:10px;
+    }
+    .col2 h1{
+        margin-left: 28px;
+        font-size: 1.2em;
+    }
+    .col2 p{
+      margin-left: 28px;
+      font-size: 1em;
+  }
+  .destination-div{
+      height: 130px;
+      width: 85%;
+      background-color: white;
+      border-radius: 5px;
+      margin-left:auto;
+      margin-right: auto;
+  }
+  .ellipse-black{
+      height: 50px;
+      width:50px;
+      display:block;
+      margin-left: 5%;
+      margin-right: auto;
+      margin-top:10px;
+  }
+  .destination-div h2{
+      font-size: 0.9em;
+      margin-left: 35%;
+      margin-top: -17%
+  }
+  .destination-div p{
+      font-size: 0.8em;
+      margin-left: 35%;
+      margin-top: -9px;
+      
+  }
+  .plane{
+      height: 30px;
+      width:30px;
+      display:block;
+      margin-left: 8%;
+      margin-right: auto;
+      margin-top:20px;
+  }
+  .h2{
+      font-size: 0.9em;
+      margin-left: -10%;
+      position: relative;
+      top:20px
+  }
+  .p{
+      font-size: 0.8em;
+      margin-left: -10%;
+      position: relative;
+      top:20px;
+       
+  }
+}

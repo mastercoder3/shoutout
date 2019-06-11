@@ -1,0 +1,93 @@
+<ion-content>
+  <div class="container">
+    <div class="row screen">
+      <div class="col1 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+         <h1>Générateur de Contrats</h1>
+         <p>Selectionner Influenceur</p>
+         <div class="row">
+            <div class="col-lg-12">
+              <div>
+                <img style="height:7%; width:7%;margin-left:60px" src="assets/imgs/ellipse1.png">
+                <img style="height:7%; width:7%; margin-left:5px" src="assets/imgs/ellipse1.png">
+                <img style="height:7%; width:7%;margin-left:5px" src="assets/imgs/ellipse1.png">
+                <img style="height:7%; width:7%;margin-left:5px" src="assets/imgs/ellipse1.png">
+                <img style="height:6%; width:6%;margin-left:5px" src="assets/imgs/add.png">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+                <p class="para">Nom de la Compagnie</p>
+                <ion-input class="input" type="text"></ion-input>
+            </div>
+            <div class="col-lg-6">
+                <p class="para1">Nom de la compagnie (influenceur)</p>
+                <ion-input class="input1" type="text"></ion-input>
+              </div>
+          </div>
+          <p class="select-p">Type de Partenariat</p>
+                    <ion-item class="item">
+                        <ion-select class="gender">
+                          <ion-select-option value="f">Female</ion-select-option>
+                          <ion-select-option value="m">Male</ion-select-option>
+                        </ion-select>
+                      </ion-item>
+
+                      <p class="para-textarea">Instructions</p>
+                      <ion-textarea class="textarea" type="text" placeholder="Instructions de la Compagnie"></ion-textarea>
+
+                      <div class="row row2">
+                          <div class="col-lg-6">
+                              <p class="para">Nom de la Compagnie</p>
+                              <ion-input class="input" type="text"></ion-input>
+                          </div>
+                          <div class="col-lg-6">
+                              <p class="para1">Nom de la compagnie (influenceur)</p>
+                              <ion-input class="input1" type="text"></ion-input>
+                            </div>
+                            <div class="awin"></div>
+                        </div>
+      </div>
+      <div class="col2 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+         <div class="row">
+          <ion-checkbox class="checkbox" mode="md" color="dark"></ion-checkbox>
+          <p class="checkbox-para">Envoi de Produit</p>
+        </div>
+        <p class="para-input">Address 1</p>
+                <ion-input type="text"></ion-input>
+                <p class="para-input">Address 2</p>
+                <ion-input type="text"></ion-input>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p class="para3">Région</p>
+                        <ion-input class="input2" type="text"></ion-input>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="para4">Code Postale</p>
+                        <ion-input class="input3" type="text"></ion-input>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-lg-6">
+                          <p class="para6">Pays</p>
+                          <ion-item class="item1">
+                              <ion-select class="gender">
+                                <ion-select-option value="f">Female</ion-select-option>
+                                <ion-select-option value="m">Male</ion-select-option>
+                              </ion-select>
+                            </ion-item>
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="para5">Ville</p>
+                            <ion-input class="input4" type="text"></ion-input>
+                        </div>
+                    </div>
+                
+                    <ion-button class="btn" (click)="influenc()">Générer Contrat</ion-button>
+                    <p class="a">Termes du Contrat</p>
+        </div>
+    </div>
+  </div>
+
+</ion-content>
