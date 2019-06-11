@@ -5,6 +5,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', loadChildren: './pages/entry-pages/home/home.module#HomePageModule' },
+  { path: 'signin', loadChildren: './pages/signin/login.module#LoginPageModule' },
   { path: 'company-front', loadChildren: './pages/company-pages/company-front/company-front.module#CompanyFrontPageModule' },
   { path: 'company-resultats',
     loadChildren: './pages/company-pages/company-resultats/company-resultats.module#CompanyResultatsPageModule' },

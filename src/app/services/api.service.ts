@@ -26,4 +26,14 @@ export class ApiService {
     return this.afs.doc('influencer/' + id).set(data);
   }
 
+  getInfluencerData(id) {
+    return this.afs.doc('influencer/' + id ).valueChanges();
+  }
+
+  // Company
+
+  createcompany(id,data) {
+    return this.afs.doc('company/' + id).set(data);
+  }
+
 }

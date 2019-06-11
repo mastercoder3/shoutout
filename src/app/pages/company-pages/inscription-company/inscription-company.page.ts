@@ -58,7 +58,7 @@ export class InscriptionCompanyPage implements OnInit {
             type: 'company'
           })
           .then((created) => {
-            this.api.createInfluencer(res.user.uid, this.data)
+            this.api.createcompany(res.user.uid, this.data)
               .then(after => {
                 this.helper.closeLoading();
                 localStorage.setItem('uid', res.user.uid);

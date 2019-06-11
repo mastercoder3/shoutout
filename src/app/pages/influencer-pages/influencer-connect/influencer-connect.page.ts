@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { HelperService } from 'src/app/services/helper.service';
 
 @Component({
   selector: 'app-influencer-connect',
@@ -10,14 +11,38 @@ export class InfluencerConnectPage implements OnInit {
   nativeWindow: any;
   public href: string = "";
 
-  constructor(private router: Router) { 
+  constructor(private router: Router, private helper: HelperService) { 
   }
 
   ngOnInit() {
+    console.log(window.opener);
     this.href = this.router.url;
-    console.log(this.router.url);
+    console.log(this.href);
+    this.helper.getToken().subscribe(res =>{
+      if(res !== ''){
+        console.log(res)
+        console.log('yess')
+      }
+    })
+    if(this.href.indexOf('access_token') > -1){
+      console.log('coming');
+      // localStorage.setItem('access_token',this.href.substring(this.href.indexOf("=")+1,this.href.length) );
+      // this.helper.setToken(this.href.substring(this.href.indexOf("=")+1,this.href.length));
+      window.opener.ProcessParentMessage(this.href.substring(this.href.indexOf("=")+1,this.href.length));
+      window.close();
+    }
   }
+
   instagram(){
-    window.open('https://api.instagram.com/oauth/authorize/?client_id=672bea92a0d2477faf72f13f4d35930f&redirect_uri=http://localhost:3000/&response_type=token');
+    window.open('https://api.instagram.com/oauth/authorize/?client_id=7b35de47d2ed4425a8165500fd89fea2&redirect_uri=http://localhost:8100/influencer-connect/&response_type=token','_blank','toolbar=0,status=0,width=626,height=436');
+    window.opener.ProcessParentMessage = (message) =>{
+    localStorage.setItem('access_token',message );
+    this.helper.setToken(message);
+    }
+  }
+
+  ProcessParentMessage(message) {
+    localStorage.setItem('access_token',message );
+    this.helper.setToken(message);
   }
 }
