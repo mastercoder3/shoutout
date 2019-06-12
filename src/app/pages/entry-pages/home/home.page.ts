@@ -12,7 +12,7 @@ export class HomePage {
 constructor(private router : Router) { }
 
 connect(){
-  this.router.navigate(['influencer-connect']);
+  this.router.navigate(['home']);
 }
 
   signupInfluencer(){

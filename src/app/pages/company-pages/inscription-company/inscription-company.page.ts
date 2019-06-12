@@ -4,6 +4,7 @@ import { AngularFireStorageReference, AngularFireUploadTask, AngularFireStorage 
 import { AuthenticationService } from 'src/app/services/authentication.service';
 import { ApiService } from 'src/app/services/api.service';
 import { HelperService } from 'src/app/services/helper.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-inscription-company',
@@ -19,7 +20,8 @@ export class InscriptionCompanyPage implements OnInit {
     private authService: AuthenticationService,
     private api: ApiService,
     private fb: FormBuilder,
-    private helper: HelperService
+    private helper: HelperService,
+    private router: Router
   ) { }
 
   ngOnInit() {
@@ -62,6 +64,7 @@ export class InscriptionCompanyPage implements OnInit {
               .then(after => {
                 this.helper.closeLoading();
                 localStorage.setItem('uid', res.user.uid);
+                this.router.navigate(['influencer-connect']);
               });
           }, err => {
             this.helper.closeLoading();

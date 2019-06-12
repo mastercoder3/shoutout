@@ -30,10 +30,18 @@ export class ApiService {
     return this.afs.doc('influencer/' + id ).valueChanges();
   }
 
+  updateInfluencerData(id,data){
+    return this.afs.doc('influencer/' + id).update(data);
+  }
+
   // Company
 
   createcompany(id,data) {
     return this.afs.doc('company/' + id).set(data);
+  }
+
+  getCompanyData(id){
+    return this.afs.doc('company/' + id).valueChanges();
   }
 
 }

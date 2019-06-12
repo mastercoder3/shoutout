@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { HelperService } from 'src/app/services/helper.service';
+import { ApiService } from 'src/app/services/api.service';
 
 @Component({
   selector: 'app-influencer-connect',
@@ -9,26 +10,26 @@ import { HelperService } from 'src/app/services/helper.service';
 })
 export class InfluencerConnectPage implements OnInit {
   nativeWindow: any;
-  public href: string = "";
+  href: string = "";
 
-  constructor(private router: Router, private helper: HelperService) { 
+  constructor(
+    private router: Router,
+    private helper: HelperService,
+    private api: ApiService
+    ) { 
   }
 
   ngOnInit() {
-    console.log(window.opener);
     this.href = this.router.url;
-    console.log(this.href);
-    this.helper.getToken().subscribe(res =>{
-      if(res !== ''){
-        console.log(res)
-        console.log('yess')
-      }
-    })
     if(this.href.indexOf('access_token') > -1){
-      console.log('coming');
-      // localStorage.setItem('access_token',this.href.substring(this.href.indexOf("=")+1,this.href.length) );
       this.helper.setToken(this.href.substring(this.href.indexOf("=")+1,this.href.length));
-      this.router.navigate(['dashboard/influencer'])
+      localStorage.setItem('access_token',this.href.substring(this.href.indexOf("=")+1,this.href.length));
+      this.api.updateInfluencerData(localStorage.getItem('uid'), {
+        access_token: this.href.substring(this.href.indexOf("=")+1,this.href.length)
+      })
+      .then(res => {
+        this.router.navigate(['dashboard/influencer']);
+      })
     }
   }
 

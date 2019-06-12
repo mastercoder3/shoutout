@@ -29,7 +29,7 @@ export class LoginPage implements OnInit {
              this.router.navigate(['dashboard/influencer']);
             }
             else if(this.ress.type==='company'){
-              this.router.navigate(['dashboard/company-influenceur']);
+              this.router.navigate(['company-front']);
             }
             localStorage.setItem('uid',res.user.uid)
           })
