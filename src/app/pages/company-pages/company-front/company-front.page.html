@@ -50,13 +50,14 @@
           <div class="col1 col-lg-4 col-md-6 col-sm-6 col-xs-6">
               <h1>{{userData?.companyName}}</h1>
               <p id="activate">{{userData?.category}}</p>
+              <br>
               <!-- <p id="price">10.000</p> -->
               <p id="liens">Liens</p>
           </div>
           <div class="col2 col-lg-4 col-md-6 col-sm-6 col-xs-12">
             <div class="row">
               <ion-icon name="md-heart"></ion-icon>
-              <ion-button>
+              <ion-button (click)="openMessages()" >
                   <i class="fas fa-comment fa-flip-horizontal"></i><p>Contact</p>
               </ion-button>
           </div>

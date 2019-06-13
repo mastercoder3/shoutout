@@ -44,4 +44,10 @@ export class ApiService {
     return this.afs.doc('company/' + id).valueChanges();
   }
 
+  // Messages
+
+  getCompanyChat(id){
+    return this.afs.collection('chat', ref => ref.where('senderId','==',id)).snapshotChanges()
+  }
+
 }
